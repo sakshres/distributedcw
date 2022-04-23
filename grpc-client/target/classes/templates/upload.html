@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<body>
+
+<h1>Matrix A</h1>
+
+<table>
+	<tr th:each="row,iterStat : ${A}">
+		<td th:each="itm,iterStat : ${row}">
+			<p th:text="${itm}"></p>
+		</td>
+	</tr>
+</table>
+
+<h1>Matrix B</h1>
+<table>
+	<tr th:each="row,iterStat : ${B}">
+		<td th:each="itm,iterStat : ${row}">
+			<p th:text="${itm}"></p>
+		</td>
+	</tr>
+</table>
+
+<div>
+	<form method="POST" action="/add">                     
+		<input type="submit" value="Add" />               
+    </form>
+
+	<form method="POST" action="/multiply">
+		<input type="submit" value="Multiply" />
+	</form>
+</div>
+
+<h2>Result:</h2>
+<table>
+	<tr th:each="row,iterStat : ${result}">
+		<td th:each="itm,iterStat : ${row}">
+			<p th:text="${itm}"></p>
+		</td>
+	</tr>
+</table>
+
+</body>
+</html>
