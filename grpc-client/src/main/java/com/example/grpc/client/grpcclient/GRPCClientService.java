@@ -57,14 +57,14 @@ public class GRPCClientService {
         }
 
 	public int[][] grpcClient(int[][] matrixA, int[][] matrixB, int deadline, boolean mult){
-                ManagedChannel channel1 = ManagedChannelBuilder.forAddress("localhost", 9090).usePlaintext().build();  
-                ManagedChannel channel2 = ManagedChannelBuilder.forAddress("localhost", 9090).usePlaintext().build();  
-                ManagedChannel channel3 = ManagedChannelBuilder.forAddress("localhost", 9090).usePlaintext().build();  
-                ManagedChannel channel4 = ManagedChannelBuilder.forAddress("localhost", 9090).usePlaintext().build();  
-                ManagedChannel channel5 = ManagedChannelBuilder.forAddress("localhost", 9090).usePlaintext().build();  
-                ManagedChannel channel6 = ManagedChannelBuilder.forAddress("localhost", 9090).usePlaintext().build();  
-                ManagedChannel channel7 = ManagedChannelBuilder.forAddress("localhost", 9090).usePlaintext().build();  
-                ManagedChannel channel8 = ManagedChannelBuilder.forAddress("localhost", 9090).usePlaintext().build();  
+                ManagedChannel channel1 = ManagedChannelBuilder.forAddress("34.125.251.18", 9090).usePlaintext().build();  
+                ManagedChannel channel2 = ManagedChannelBuilder.forAddress("34.125.236.147 ", 9090).usePlaintext().build();  
+                ManagedChannel channel3 = ManagedChannelBuilder.forAddress("34.125.55.126", 9090).usePlaintext().build();  
+                ManagedChannel channel4 = ManagedChannelBuilder.forAddress("34.125.131.231", 9090).usePlaintext().build();  
+                ManagedChannel channel5 = ManagedChannelBuilder.forAddress("34.125.238.68", 9090).usePlaintext().build();  
+                ManagedChannel channel6 = ManagedChannelBuilder.forAddress("34.125.43.40", 9090).usePlaintext().build();  
+                ManagedChannel channel7 = ManagedChannelBuilder.forAddress("34.125.76.168", 9090).usePlaintext().build();  
+                ManagedChannel channel8 = ManagedChannelBuilder.forAddress("34.125.127.220", 9090).usePlaintext().build();  
 
                 MatrixServiceGrpc.MatrixServiceBlockingStub stub1 = MatrixServiceGrpc.newBlockingStub(channel1);
                 MatrixServiceGrpc.MatrixServiceBlockingStub stub2 = MatrixServiceGrpc.newBlockingStub(channel2);
